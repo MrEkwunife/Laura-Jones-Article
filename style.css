@@ -1,4 +1,175 @@
-html {
-  height: 100%;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.centering-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 60px;
+}
+
+/* HEADER SECTION OF THE PAGE */
+
+.page-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 15px;
+  background-color: #f7f7f7;
+  grid-column: span 2;
+}
+
+.post-header{
+  color: #1098ad;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: bold;
+  padding-right: 120px;
+}
+
+.post-header::first-letter{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.navigation-links{
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 30px;
+  padding: 8px 15px;
+}
+
+.navigation-links a:link, .navigation-links a:visited{
+  text-decoration: none;
+  color: #1098ad;
+  /* font-size: larger; */
+}
+
+.navigation-links a:hover, .navigation-links a:active{
+  color: red;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+/* PAGE ARTICLE SECTION OF THE PAGE */
+/* Article header */
+.article-header{
+  margin-bottom: 2rem;
+}
+
+.article-header h2{
+  color: #1098ad;
+  font-size: 2rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.article-header h2::after{
+  content: 'top';
+  text-align: center;
+  padding: 6px 12px;
+  background-color: #ffe70e;
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: absolute;
+  top: -15px;
+  right: -30px;
+}
+
+.author{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: .8rem;
+}
+
+.author img{
+  width: 50px;
+  height: 50px;
+}
+
+.header-code-img{
   width: 100%;
+}
+
+/* Article reading sections */
+.second-para-section,.learn-more{
+  margin-bottom: 2rem;
+}
+
+.article-sub-section-header{
+  font-size: 1.5rem;
+  color: #1098ad;
+  margin-bottom: 1rem;
+}
+
+
+ol,ul{
+  margin-left: 30px;
+}
+
+
+/* ASIDE/RELATED POSTS SECTION */
+
+.related-to-post{
+  border-top: 10px solid #1098ad;
+  border-bottom: 10px solid #1098ad;
+  align-self: start;
+  padding:  15px;
+}
+
+.related-head{
+  color: #1098ad;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.related-to-post img{
+  width: 100px;
+  height: 100px;
+  /* height: auto; */
+}
+
+.related-post-list{
+  list-style-type: none;
+}
+
+.related{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.related:last-child{
+  margin-bottom: 0;
+}
+
+.related-link:link, .related-link:visited{
+  color: #1098ad;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.related-link:hover, .related-link:active{
+  text-decoration: underline;
+  color: orangered;
+}
+
+footer{
+  grid-column: span 2;
+  background-color:#f7f7f7;
 }

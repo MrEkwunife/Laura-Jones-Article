@@ -1,23 +1,129 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <body>
+    <div class="centering-container">
+      <header class="page-top">
+        <h1 class="post-header">📘 The Code Magazine</h1>
+        <nav class="navigation-links">
+          <a href="#">Blog</a>
+          <a href="#">Challenges</a>
+          <a href="#">Flexbox</a>
+          <a href="#">CSS-grid</a>
+        </nav>
+      </header>
 
-<body>
-  Hello world
-  <script src="script.js"></script>
+      <article class="articles">
+        <header class="article-header">
+          <h2>The Basic Language of the Web: HTML</h2>
 
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
-</body>
+          <div class="author">
+            <img
+              src="./img/laura-jones.jpg"
+              alt="A picture of the author, Laura Jones"
+            />
+            <p>Posted by Laura Jones on Monday, June 21st 2027</p>
+          </div>
 
+          <img src="./img/post-img.jpg" alt="Codes on a screen" class="header-code-img"/>
+        </header>
+
+        <section class="article-read-content">
+          <p class="first-para-section">
+            All modern websites and web applications are built using three
+            fundamental technologies: HTML, CSS and JavaScript. These are the
+            languages of the web.
+          </p>
+          <p class="second-para-section">
+            In this post, let's focus on HTML. We will learn what HTML is all
+            about, and why you too should learn it.
+          </p>
+
+          <h3 class="article-sub-section-header article-sub-section-header-1">
+            What is HTML?
+          </h3>
+          <p>
+            HTML stands for HyperText Markup Language. It's a markup language
+            that web developers use to structure and describe the content of a
+            webpage (not a programming language).
+          </p>
+          <p>
+            HTML consists of elements that describe different types of content:
+            paragraphs, links, headings, images, video, etc. Web browsers
+            understand HTML and render HTML code as websites.
+          </p>
+
+          <p>In HTML, each element is made up of 3 parts:</p>
+          <ol class="parts-list">
+            <li>The opening tag</li>
+            <li>The closing tag</li>
+            <li>The actual element</li>
+          </ol>
+
+          <p class="learn-more">
+            You can learn more at <a href="#">MDN Web Docs</a>
+          </p>
+
+          <h3 class="article-sub-section-header article-sub-section-header-2">
+            Why should you learn HTML?
+          </h3>
+          <p>
+            There are countless reasons for learning the fundamental language of
+            the web. Here are 5 of them:
+          </p>
+
+          <ul class="reason-list">
+            <li>To be able to use the fundamental web dev language</li>
+            <li>
+              To hand-craft beautiful websites instead of relying on tools like
+              Worpress or Wix
+            </li>
+            <li>To build web applications</li>
+            <li>To impress friends</li>
+            <li>To have fun 😃</li>
+          </ul>
+          <p>Hopefully you learned something new here. See you next time!</p>
+        </section>
+      </article>
+
+      <aside class="related-to-post">
+        <h4 class="related-head">Related Post</h4>
+
+        <ul class="related-post-list">
+
+          <li class="related related-1">
+            <img src="./img/related-1.jpg" alt="Man typing on a computer" />
+            <div class="descriptions description-1">
+              <a href="#" class="related-link">How to learn web development</a>
+              <p>By Jonas Schmedtman</p>
+            </div>
+          </li>
+          
+          <li class="related related-2">
+            <img src="./img/related-2.jpg" alt="Image of Lightening" />
+            <div class="descriptions description-2">
+              <a href="#" class="related-link">The Uknown power of CSS</a>
+              <p>By John Dilon</p>
+            </div>
+          </li>
+
+          <li class="related related-3">
+            <img src="./img/related-3.jpg" alt="Codes on screen" />
+            <div class="descriptions description-3">
+              <a href="#" class="related-link">Why JavaScript is Awesome</a>
+              <p>By Matilda</p>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <footer>Copyright &copy; by the code Magazines</footer>
+    </div>
+  </body>
 </html>
